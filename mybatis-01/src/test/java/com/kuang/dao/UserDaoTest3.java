@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class UserDaoTest3 {
+    //模糊查询
     @Test
     public void test_selectLike(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
@@ -19,6 +20,7 @@ public class UserDaoTest3 {
         }
         sqlSession.close();
     }
+    //全部查询
     @Test
     public void test_selectAll(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
@@ -29,6 +31,7 @@ public class UserDaoTest3 {
         }
         sqlSession.close();
     }
+    //根据id查询
     @Test
     public void test_select(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
@@ -37,6 +40,7 @@ public class UserDaoTest3 {
         System.out.println(userById);
         sqlSession.close();
     }
+    //通过map查询，传入两个参数
     @Test
     public void test_select2(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
@@ -58,6 +62,7 @@ public class UserDaoTest3 {
         sqlSession.commit();
         sqlSession.close();
     }
+    //通过map增加
     @Test
     public void test_insert2(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();

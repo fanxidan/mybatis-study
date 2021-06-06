@@ -4,6 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace绑定一个对应的mapper/dao接口-->
 <mapper namespace="com.kuang.dao.UserMapper2">
+    <!--模糊查询-->
     <select id="getUserLike" resultType="com.kuang.pojo.User">
         select * from mybatis.user where name like "%" #{value} "%";
     </select>
@@ -13,6 +14,7 @@
     <select id="getUserById" parameterType="int" resultType="com.kuang.pojo.User">
         select * from mybatis.user where id = #{id};
     </select>
+    <!--通过map查询多个参数-->
     <select id="getUserById2" parameterType="map" resultType="com.kuang.pojo.User">
         select * from mybatis.user where id = #{user_id} and name = #{user_name};
     </select>
@@ -20,6 +22,7 @@
     <insert id="addUser" parameterType="com.kuang.pojo.User">
         insert into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd});
     </insert>
+    <!--通过map新增用户-->
     <insert id="addUser2" parameterType="map">
         insert into mybatis.user (id,name,pwd) values (#{user_id},#{user_name},#{user_pwd});
     </insert>

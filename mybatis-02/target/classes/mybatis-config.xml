@@ -8,7 +8,7 @@
 
     <!--给实体类起别名-->
     <typeAliases>
-        <typeAlias type="com.kuang.pojo.User" alias="User"/>
+        <typeAlias type="com.kuang.com.kuang.pojo.User" alias="User"/>
         <package name="com.kuang.pojo"/>
     </typeAliases>
     <!--通过default里面的值来切换environment-->

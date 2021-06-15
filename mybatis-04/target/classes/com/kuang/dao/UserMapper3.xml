@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kuang.dao.UserMapper3">
+    <!--结果集映射-->
+    <resultMap id="UserMap3" type="com.kuang.pojo.User">
+        <!--column:数据库字段 property=实体类属性-->
+        <result column="pwd" property="password"/>
+    </resultMap>
+    <!--分页查询-->
+    <select id="getUserByLimit" parameterType="map" resultMap="UserMap3">
+        select * from mybatis.user limit #{startIndex},#{pageSize}
+    </select>
+    <select id="getUserByRowBounds" parameterType="map" resultMap="UserMap3">
+        select * from mybatis.user
+    </select>
+</mapper>

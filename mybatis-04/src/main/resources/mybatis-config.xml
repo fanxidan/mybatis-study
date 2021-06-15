@@ -10,7 +10,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.kuang.pojo.User" alias="User"/>
+        <typeAlias type="com.com.kuang.pojo.User" alias="User"/>
     </typeAliases>
     <!--通过default里面的值来切换environment-->
     <environments default="development">
@@ -26,8 +26,8 @@
     </environments>
     <!--每一个mapper.xml都需要在MyBatis核心配置文件中注册-->
     <mappers>
-        <mapper resource="com/kuang/dao/UserMapper1.xml"/>
-        <mapper resource="com/kuang/dao/UserMapper2.xml"/>
-        <mapper resource="com/kuang/dao/UserMapper3.xml"/>
+        <mapper resource="com/com.kuang/dao/UserMapper1.xml"/>
+        <mapper resource="com/com.kuang/dao/UserMapper2.xml"/>
+        <mapper resource="com/com.kuang/dao/UserMapper3.xml"/>
     </mappers>
 </configuration>

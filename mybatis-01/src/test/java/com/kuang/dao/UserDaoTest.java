@@ -18,7 +18,7 @@ public class UserDaoTest {
         List<User> userList1 = mapper.getUserList();
 
         //方式2
-        List<User> userList2 = sqlSession.selectList("com.kuang.dao.UserDao.getUserList");
+        List<User> userList2 = sqlSession.selectList("com.com.kuang.dao.UserDao.getUserList");
 
         for (User user : userList1) {
             System.out.println(user);

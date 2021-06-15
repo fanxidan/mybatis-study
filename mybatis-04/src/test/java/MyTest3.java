@@ -17,7 +17,7 @@ public class MyTest3 {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         RowBounds rowBounds = new RowBounds(1, 2);
         //通过java sqlSession来实现分页
-        List<User> user = sqlSession.selectList("com.kuang.dao.UserMapper3.getUserByRowBounds",null, rowBounds);
+        List<User> user = sqlSession.selectList("com.com.kuang.dao.UserMapper3.getUserByRowBounds",null, rowBounds);
         for (User re : user) {
             System.out.println(re);
         }

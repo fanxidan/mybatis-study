@@ -8,8 +8,8 @@
 
     <!--给实体类起别名-->
     <typeAliases>
-        <typeAlias type="com.com.kuang.com.com.kuang.pojo.User" alias="User"/>
-        <package name="com.com.kuang.pojo"/>
+        <typeAlias type="com.com.com.kuang.com.com.com.kuang.pojo.User" alias="User"/>
+        <package name="com.com.com.kuang.pojo"/>
     </typeAliases>
     <!--通过default里面的值来切换environment-->
     <environments default="development">
@@ -25,8 +25,8 @@
     </environments>
     <!--每一个mapper.xml都需要在MyBatis核心配置文件中注册-->
     <mappers>
-<!--        <mapper resource="com/com.kuang/dao/UserMapper1.xml"/>-->
-<!--        <mapper class="com.com.kuang.dao.UserMapper1"/>-->
-        <package name="com.com.kuang.dao"/>
+<!--        <mapper resource="com/com.com.kuang/dao/UserMapper1.xml"/>-->
+<!--        <mapper class="com.com.com.kuang.dao.UserMapper1"/>-->
+        <package name="com.com.com.kuang.dao"/>
     </mappers>
 </configuration>

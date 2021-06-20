@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.com.kuang.dao.UserMapper1">
+<mapper namespace="com.com.com.kuang.dao.UserMapper1">
     <!--结果集映射-->
-    <resultMap id="UserMap" type="com.com.kuang.pojo.User">
+    <resultMap id="UserMap" type="com.com.com.kuang.pojo.User">
         <!--column:数据库字段 property=实体类属性-->
         <result column="pwd" property="password"/>
         <result column="id" property="id"/>

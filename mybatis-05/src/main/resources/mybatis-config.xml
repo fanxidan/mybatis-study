@@ -10,7 +10,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.com.kuang.pojo.User" alias="User"/>
+        <typeAlias type="com.kuang.pojo.User" alias="User"/>
     </typeAliases>
     <!--通过default里面的值来切换environment-->
     <environments default="development">
@@ -27,6 +27,6 @@
 
     <!--绑定接口-->
     <mappers>
-        <mapper class="com.com.kuang.dao.UserMapper1"/>
+        <mapper class="com.kuang.dao.UserMapper1"/>
     </mappers>
 </configuration>

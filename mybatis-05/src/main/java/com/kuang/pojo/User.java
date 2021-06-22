@@ -1,9 +1,11 @@
 package com.kuang.pojo;
 
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@Data
+@AllArgsConstructor
 public class User {
-    @Setter
     private int id;
     private String name;
     private String password;

@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace绑定一个对应的mapper/dao接口-->
-<mapper namespace="com.com.com.kuang.dao.UserDao">
-    <select id="getUserList" resultType="com.com.com.kuang.com.com.com.kuang.pojo.User">
+<mapper namespace="com.kuang.dao.UserDao">
+    <select id="getUserList" resultType="com.kuang.pojo.User">
         select * from mybatis.user
     </select>
 </mapper>

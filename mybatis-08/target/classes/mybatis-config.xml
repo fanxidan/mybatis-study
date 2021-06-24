@@ -30,5 +30,6 @@
 <!--        <package name="com.kuang.dao"/>-->
         <mapper resource="com/kuang/dao/BlogMapper.xml"/>
         <mapper resource="com/kuang/dao/BlogMapper2.xml"/>
+        <mapper resource="com/kuang/dao/BlogMapper3.xml"/>
     </mappers>
 </configuration>
